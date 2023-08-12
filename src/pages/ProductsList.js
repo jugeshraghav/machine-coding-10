@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useData } from "../contexts/DataContext";
 
 export const ProductsList = () => {
-  const { dispatch, deptArr, finalSortedProductsList } = useData();
+  const { state, dispatch, deptArr, finalSortedProductsList } = useData();
   const navigate = useNavigate();
   //select filters
   const selectDeptHandler = (e) => {
@@ -23,7 +23,11 @@ export const ProductsList = () => {
       <div className="mt-5 p-2">
         <div className="flex justify-between">
           <h1 className="font-bold text-lg">Products</h1>
-          <select onChange={selectDeptHandler} className="border">
+          <select
+            onChange={selectDeptHandler}
+            className="border"
+            value={state?.department}
+          >
             <option value="All Departments">All Departments</option>
             {deptArr.map((curr) => (
               <option value={curr}>{curr}</option>
@@ -37,7 +41,11 @@ export const ProductsList = () => {
             />
             <label htmlFor="show_low_stock">Low Stock Items</label>
           </div>
-          <select onChange={sortOnHandler} className="border">
+          <select
+            onChange={sortOnHandler}
+            className="border"
+            value={state?.sortOn}
+          >
             <option value="Name">Name</option>
             <option value="Price">Price</option>
             <option value="Stock">Stock</option>
