@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useData } from "../contexts/DataContext";
 
 export const ProductsList = () => {
-  const { state, dispatch, deptArr, finalSortedProductsList } = useData();
+  const { dispatch, deptArr, finalSortedProductsList } = useData();
   const navigate = useNavigate();
   //select filters
   const selectDeptHandler = (e) => {
