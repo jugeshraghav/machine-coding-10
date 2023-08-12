@@ -1,6 +1,6 @@
 import { useData } from "../contexts/DataContext";
 
-export const Dashboard = () => {
+export const Home = () => {
   const { inventoryData } = useData();
   const totalStock = inventoryData.reduce((acc, curr) => acc + curr?.stock, 0);
   const totalDeliveredItems = inventoryData.reduce(
