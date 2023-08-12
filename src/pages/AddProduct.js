@@ -52,7 +52,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>Add Department</label>
             <select
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="department"
               required
               value={newProductDetails.department}
@@ -68,7 +68,7 @@ export const AddProduct = () => {
             <label>Name:</label>
             <input
               type="text"
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="name"
               required
               value={newProductDetails?.name}
@@ -79,7 +79,7 @@ export const AddProduct = () => {
             <label>Description:</label>
             <textarea
               rows="5"
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="description"
               value={newProductDetails.description}
               required
@@ -89,7 +89,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>Price:</label>
             <input
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="price"
               required
               value={newProductDetails?.price}
@@ -99,7 +99,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>Stock</label>
             <input
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="stock"
               required
               value={newProductDetails?.stock}
@@ -109,7 +109,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>SKU:</label>
             <input
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="sku"
               required
               value={newProductDetails.sku}
@@ -119,7 +119,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>Supplier:</label>
             <input
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="supplier"
               required
               value={newProductDetails?.supplier}
@@ -129,7 +129,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>Delivered:</label>
             <input
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="delivered"
               required
               value={newProductDetails?.delivered}
@@ -139,7 +139,7 @@ export const AddProduct = () => {
           <div className="flex flex-col w-full">
             <label>Image Url:</label>
             <input
-              className="w-full p-4"
+              className="w-full p-4 border"
               name="imageUrl"
               required
               value={newProductDetails.imageUrl}
